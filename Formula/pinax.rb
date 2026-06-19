@@ -5,21 +5,21 @@
 class Pinax < Formula
   desc "Agent-safe knowledge control plane for local Markdown vaults."
   homepage "https://github.com/yeisme/pinax"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeisme/pinax/releases/download/v0.1.0/pinax_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "a1bc2d5f47c81129e3fba85d04c9dd48358e4416f4a51fef9c026d24ac606ebc"
+      url "https://github.com/yeisme/pinax/releases/download/v0.1.1/pinax_0.1.1_darwin_x86_64.tar.gz"
+      sha256 "9cc940fe58309bdfcd51e5eca4562ff1c0a8492c6bc6ae8f99ef3a7fa5e34a4b"
 
       def install
         bin.install "pinax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeisme/pinax/releases/download/v0.1.0/pinax_0.1.0_darwin_aarch64.tar.gz"
-      sha256 "b6a84f608cb513fd9d0e3931bc8b89d4604932b25a4e480ffb435a9725939a72"
+      url "https://github.com/yeisme/pinax/releases/download/v0.1.1/pinax_0.1.1_darwin_aarch64.tar.gz"
+      sha256 "043cc92929db10dd2325a2c2c55e22e82bd75e3e9cd31d7a5d953ec3721f19e7"
 
       def install
         bin.install "pinax"
@@ -29,17 +29,15 @@ class Pinax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeisme/pinax/releases/download/v0.1.0/pinax_0.1.0_linux_x86_64.tar.gz"
-      sha256 "542d759cd6764aad9a676cea723ae61304263b9c0fb3fc6be350be9ab79616bd"
-
+      url "https://github.com/yeisme/pinax/releases/download/v0.1.1/pinax_0.1.1_linux_x86_64.tar.gz"
+      sha256 "410b5bc08ef7ee615d546db5b496eb573ec8a82b97c7ea3e4fa277320ed576b0"
       def install
         bin.install "pinax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeisme/pinax/releases/download/v0.1.0/pinax_0.1.0_linux_aarch64.tar.gz"
-      sha256 "8cd835d01ac08d2bb8b4a1b4abdd7a26194c21c9a7e8c4244291ab5b1c7cea91"
-
+      url "https://github.com/yeisme/pinax/releases/download/v0.1.1/pinax_0.1.1_linux_aarch64.tar.gz"
+      sha256 "c078fe3d0f8edbe0f610b803fd49d3859ff8170386da979e7abb7a03b2730a54"
       def install
         bin.install "pinax"
       end
