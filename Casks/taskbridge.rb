@@ -3,7 +3,7 @@ cask "taskbridge" do
   name "taskbridge"
   desc "TaskBridge CLI for AI-assisted multi-provider task workflows."
   homepage "https://github.com/yeisme/taskbridge"
-  version "1.0.9"
+  version "1.0.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "taskbridge" do
   on_macos do
     on_intel do
       url "https://github.com/yeisme/taskbridge/releases/download/v#{version}/taskbridge_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "0b386be2f2b24dd2e83e433ecd539178da5e9fea94ec3fb58215c459802ba117"
+      sha256 "4be3d668d4abe58817ae982c79ad5a1fdb4f1c048a8a53d3a3e561f6782b82ea"
     end
     on_arm do
       url "https://github.com/yeisme/taskbridge/releases/download/v#{version}/taskbridge_#{version}_Darwin_arm64.tar.gz"
-      sha256 "8d33df04489108aa505911032bcc468e5fead406ccee347e5e389a13e43444f6"
+      sha256 "113e58dbe35a011aef21bea86bd0d499bf3b831deb8caf405c30df4feb098ff3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/yeisme/taskbridge/releases/download/v#{version}/taskbridge_#{version}_Linux_x86_64.tar.gz"
-      sha256 "4056e50ec72b7b6fe316d1649b308e8f21a9cb959a03d4bdc69bb4456472f914"
+      sha256 "32981765f94762a7ef785717a5e8e923c2001c13b2e27340a1f2bcc36c934855"
     end
     on_arm do
       url "https://github.com/yeisme/taskbridge/releases/download/v#{version}/taskbridge_#{version}_Linux_arm64.tar.gz"
-      sha256 "6e612ea100bdb4c66d86b09c89c2c302ef4ec6cf850e9045f69b3ff2fa18b3cc"
+      sha256 "1942f6a53bd681d4e8294c6983f48a39c15064336ac74aee7b1f589615aba680"
     end
   end
 
